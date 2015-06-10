@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:7
 ADD stage /edge/
 EXPOSE 2500
 CMD chmod u+x /edge/bin
