@@ -1,4 +1,5 @@
 # remove build files for backend
+cd ..
 rm -rf 														\
 	./logs													\
 	./target												\

@@ -1,3 +1,5 @@
+cd ..
+
 # Prepare binary
 ./activator clean stage
 

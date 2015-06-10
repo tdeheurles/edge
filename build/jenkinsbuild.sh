@@ -1,3 +1,5 @@
+cd ..
+
 . release.cfg
 
 projectid=$(curl -s 'http://metadata/computeMetadata/v1/project/project-id' -H 'Metadata-Flavor: Google')
