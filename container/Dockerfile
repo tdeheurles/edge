@@ -1,6 +1,6 @@
 FROM java:8
-ADD stage /backend/
+ADD stage /edge/
 EXPOSE 2500
-CMD chmod u+x /backend/bin
+CMD chmod u+x /edge/bin
 ENV LANG en_US.UTF-8
-ENTRYPOINT /backend/bin/backend -Dhttp.port=2500
+ENTRYPOINT /edge/bin/edge -Dhttp.port=2500
