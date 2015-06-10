@@ -2,8 +2,8 @@
 ./activator clean stage
 
 # copy to the container folder
-mkdir ./container
-mkdir ./container/stage
+mkdir -p ./container
+mkdir -p ./container/stage
 
 cp -r 										  \
   ./target/universal/stage  \
