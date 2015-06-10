@@ -1,12 +1,10 @@
-cd ..
-
 # Prepare binary
-./activator clean stage
+./../activator clean stage
 
 # copy to the container folder
-mkdir ./container
-mkdir ./container/stage
+mkdir ./../container
+mkdir ./../container/stage
 
 cp -r 										  \
-  ./target/universal/stage  \
-  ./container
+  ./../target/universal/stage  \
+  ./../container

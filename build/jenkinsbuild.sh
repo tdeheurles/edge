@@ -1,14 +1,12 @@
-cd ..
-
-. release.cfg
+. ./../release.cfg
 
 projectid=$(curl -s 'http://metadata/computeMetadata/v1/project/project-id' -H 'Metadata-Flavor: Google')
 artifactname=gcr.io/$projectid/$servicename:$servicemajor.$serviceminor.$BUILD_NUMBER
 
 
-./build.sh
+./../build.sh
 
 
-docker build -t $artifactname ./container/
+docker build -t $artifactname ./../container/
 
 gcloud preview docker push $artifactname
